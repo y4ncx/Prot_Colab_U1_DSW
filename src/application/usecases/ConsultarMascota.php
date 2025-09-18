@@ -3,13 +3,13 @@
 namespace Src\application\usecases;
 
 use Src\Domain\Entities\Mascota;
-use Src\domain\repositories\MascotaRepository;
+use Src\domain\repositories\IMascotaRepository;
 
 class ConsultarMascota{
-    private MascotaRepository $repositorio;
+    private IMascotaRepository $repositorio;
 
 
-    public function __Construct(MascotaRepository $repositorio){
+    public function __Construct(IMascotaRepository $repositorio){
         $this->repositorio = $repositorio;
     }
 

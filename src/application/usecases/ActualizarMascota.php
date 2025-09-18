@@ -3,12 +3,12 @@
 namespace Src\application\usecases;
 
 use Src\Domain\Entities\Mascota;
-use Src\domain\repositories\MascotaRepository;
+use Src\domain\repositories\IMascotaRepository;
 
 class ActualizarMascota{
-    private MascotaRepository $repostiorio;
+    private IMascotaRepository $repostiorio;
 
-    public function __Construct(MascotaRepository $repostiorio){
+    public function __Construct(IMascotaRepository $repostiorio){
         $this->repostiorio = $repostiorio;
     }
 
