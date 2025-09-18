@@ -13,6 +13,6 @@ class ListarMascotas{
     }
 
     public function execute(Mascota $masccota): void{
-        $this->repositorio->crear($masccota);
+        $this->repositorio->listar();
     }
 }
